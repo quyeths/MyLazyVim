@@ -1,20 +1,15 @@
 return {
   {
     "tzachar/cmp-tabnine",
-    lazy = false,
     build = "./install.sh",
     dependencies = "hrsh7th/nvim-cmp",
     config = function()
       require("cmp").setup({
         sources = {
-          { name = "nvim_lsp" },
-          { name = "luasnip" },
-          { name = "buffer" },
-          { name = "path" },
           { name = "cmp_tabnine" },
         },
       })
-      require("cmp_tabnine.config"):setup({
+      require("cmp_tabnine.config").setup({
         max_lines = 1000,
         max_num_results = 20,
         sort = true,
