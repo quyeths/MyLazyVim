@@ -6,6 +6,10 @@ return {
     config = function()
       require("cmp").setup({
         sources = {
+          { name = "nvim_lsp" },
+          { name = "luasnip" },
+          { name = "buffer" },
+          { name = "path" },
           { name = "cmp_tabnine" },
         },
       })
