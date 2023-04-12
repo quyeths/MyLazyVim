@@ -11,6 +11,7 @@ return {
         suggestion_color = { gui = "#808080", cterm = 244 },
         exclude_filetypes = { "TelescopePrompt" },
       })
+      require("tabnine.status").status()
     end,
   },
 }
