@@ -14,6 +14,7 @@ return {
           nls.builtins.formatting.prettier,
           nls.builtins.formatting.shfmt,
           nls.builtins.diagnostics.flake8,
+          nls.builtins.formatting.black,
         },
       }
     end,
